@@ -1,0 +1,304 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box; 
+	font-family: 'Open Sans', sans-serif;
+}
+
+/** Boot CSS **/
+
+img{
+	width: 100%;
+	max-width: 500px;
+}
+
+.center{
+	max-width: 1280px;
+	padding:0 2%;
+	margin:0 auto;
+}
+.w33{
+	width: 33.3%;
+	padding: 0 10px;
+}
+.w50{
+	padding: 0 2%;
+	width: 50%;
+}
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
+.clear{
+	clear: both;
+}
+
+/** Estilização do site **/
+
+header{
+	background: black;
+	padding: 20px 0;
+}
+header .logo{
+	font-size: 25px;
+	font-weight: 300;
+		
+}
+
+.logo a{
+	color: white;
+	text-decoration: none;
+}
+nav.mobile{
+	display: none;
+}
+
+nav.desktop ul{
+	list-style-type: none;
+	position: relative;
+	top: 10px;
+}
+
+nav.desktop li{
+	font-size: 15px;
+	padding: 0 30px;
+	text-transform: uppercase; 
+ 	display: inline-block;
+ }
+
+nav.desktop a{
+	color: white;
+	text-decoration: none;	
+}
+section.banner-principal{
+	width: 100%;
+	height: 400px;
+	background-color: aqua;
+	background-image: url('../img/bg-form.jpg');
+	background-size: cover;
+	position: relative;
+
+}
+.overlay{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(51,51,51,0.7);
+	z-index: 1;
+}
+section.banner-principal form{
+	width: 85%;
+	max-width: 600px;
+	z-index: 2;
+	position: absolute;
+	left: 50%;
+	top:50%;
+	transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+
+}
+section.banner-principal form h2{
+	color: white;
+	font-weight: 300;
+	font-size: 30px;
+	text-align: center;
+
+}
+
+section.banner-principal form input[type=email]{
+	width: 100%;
+	height: 66px;
+	background:white;
+	color: #333;
+	font-size: 22px;
+	padding-left: 10px;
+	margin-top: 10px ;
+}
+
+section.banner-principal form input[type=submit]{
+	width: 100%;
+	height: 66px;
+	background:black;
+	color: white;
+	font-size: 22px;
+	padding-left: 10px;
+	margin-top: 10px;
+	cursor: pointer;
+	border: 0;
+	border-radius: 5px;
+	
+}
+
+section.descricao-autor{
+	padding: 30px 0;
+}
+
+section.descricao-autor h2{
+	font-size: 30px;
+	font-weight: bold;
+	color: #444;
+}
+
+section.descricao-autor p{
+	font-size: 16px;
+	color: #444;
+	margin-top: 18px;
+}
+section.especialidades{
+	padding: 40px 0;
+	background: #d2d2d2;
+	margin-bottom: 15px;
+}
+section.especialidades h2.title{
+	font-size: 30px;
+	text-align: center;
+	font-weight: 400;
+	color: black;
+	
+}
+
+.box-especialidade{
+	margin: 40px 0;
+	text-align: center;
+	padding: 0 30px;
+	
+}
+
+.box-especialidade h3{
+	font-size: 30px;
+	color: black;
+}
+.box-especialidade h4{
+	font-weight: 300;
+	font-size: 25px;
+	color: #333;
+}
+.box-especialidade p{
+	margin-top: 10px;
+	font-size: 15px;
+}
+
+section.extras{
+	background: rgb(0, 0, 0);
+	color: #d3d3d3;
+	padding: 30px 0;
+	margin-bottom: 15px;
+}
+
+section.extras .title{
+	font-weight: 300;
+	font-size: 25px;
+	margin-bottom: 15px;
+}
+.depoimentos-container,.servicos-container{
+	padding: 0 2%;
+	color: white;
+}
+
+.depoimento-single{
+	padding: 15px 0;
+}
+p.depoimento-descricao{
+	font-size: 15px;
+	font-weight: 300;
+}
+.servicos ul{
+	margin: 20px 0;
+}
+.servicos li {
+	margin-bottom: 15px;
+	font-size: 15px;
+	color: white;
+	font-weight: 300;
+}
+footer{
+	background: rgb(27, 27, 27);
+	padding: 30px 0;
+}
+footer p{
+	color: white;
+	text-align: center;
+	font-weight: 400;
+	font-size: 16px;	
+}
+
+.contato-container{
+	padding:40px 0;
+	text-align:center;
+}
+.contato-container input[type=text]{
+	margin: 8px 0;
+	width: 100%;
+	height: 40px;
+	border: 1px solid rgb(0, 0, 0);
+	padding-left: 8px;
+	font-size: 16px;
+	max-width: 500px;
+	color: #444;
+}
+
+
+@media screen and (max-width: 700px){
+	nav.desktop{
+		display: none;
+	}
+	nav.mobile{
+		display: block;
+	}
+	.button-mobile{
+		font-size: 35px;
+		cursor: pointer;
+		color: white;
+
+	}
+	nav.mobile ul{
+		top:75px;
+		z-index: 3;
+		position: absolute;
+		left: 0;
+		width: 100%;
+		display: none;
+		text-align: center;
+		background: rgb(102, 102, 102);
+	}
+
+	nav.mobile li{
+		width: 100%;
+		display: block;
+		background: rgb(102, 102, 102);
+		border-bottom: 1px solid rgb(207, 207, 207);
+		font-size: 20px;
+		padding: 8px 0;
+	}
+	nav.mobile li a{
+		color: white;
+		text-decoration: none;
+	}
+}
+
+
+@media screen and (max-width: 768px){
+	img{
+		float: none !important;
+		display: block;
+		margin: 0 auto;
+		
+	}
+	.box-especialidade{
+		padding: 40px 20px;
+		margin: 0;
+	}
+	.w50{
+		padding: 20px;
+		width: 100%;
+	}
+	.w33{
+		padding: 20px;
+		width: 100%;
+	}
+}
+
